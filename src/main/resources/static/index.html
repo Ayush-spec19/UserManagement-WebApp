@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>User Management</h1>
+
+<div class="container">
+
+    <!-- POST Section -->
+    <h2>Add User:</h2>
+    <input type="text" id="postUserName" placeholder="Enter Name">
+    <input type="email" id="postUserEmail" placeholder="Enter Email">
+    <button class="btn post" onclick="addUser()">POST (Add User)</button>
+
+    <!-- GET Section -->
+    <h2>Fetch User by ID:</h2>
+    <input type="text" id="userId" placeholder="Enter User ID">
+    <button class="btn get" onclick="getUser()">GET (Fetch User by ID)</button>
+
+    <!-- 🆕 GET ALL Section -->
+    <h2>Fetch All Users:</h2>
+    <button class="btn get" onclick="getAllUsers()">GET ALL (Fetch All Users)</button>
+
+    <!-- PUT Section -->
+    <h2>Update User:</h2>
+    <input type="text" id="putUserId" placeholder="Enter ID to Update">
+    <input type="text" id="putUserName" placeholder="New Name">
+    <input type="email" id="putUserEmail" placeholder="New Email">
+    <button class="btn put" onclick="updateUser()">PUT (Update User)</button>
+
+    <!-- DELETE Section -->
+    <h2>Delete User:</h2>
+    <input type="text" id="deleteUserId" placeholder="Enter ID to Delete">
+    <button class="btn delete" onclick="deleteUser()">DELETE (Remove User)</button>
+
+    <!-- Output Display -->
+    <div id="output"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
