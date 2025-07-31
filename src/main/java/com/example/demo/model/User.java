@@ -24,33 +24,28 @@ public class User {
         this.email = email;
     }
 
-    // Custom getter for id
+    // Getters and Setters
     public Long getId() {
         return id;
     }
 
-    // Custom setter for id
     public void setId(Long id) {
         this.id = id;
     }
 
-    // Custom getter for name
     public String getName() {
-        return name != null ? name.toUpperCase() : null;  // Example: Uppercasing name
+        return name;
     }
 
-    // Custom setter for name
     public void setName(String name) {
-        this.name = name != null ? name.trim() : null;  // Example: Trimming whitespace
+        this.name = name;
     }
 
-    // Custom getter for email
     public String getEmail() {
-        return email != null ? email.toLowerCase() : null;  // Example: Lowercasing email
+        return email;
     }
 
-    // Custom setter for email
     public void setEmail(String email) {
-        this.email = email != null ? email.trim() : null;  // Example: Trimming whitespace
+        this.email = email;
     }
 }
